@@ -10,7 +10,7 @@ describe Fizzbuzz do
     it "returns FizzBuzz when the number is divisible by 3 and 5" do
       expect(Fizzbuzz.parse(15)).to eq("FizzBuzz")
     end
-    it "returns an empty string when given a number not divisible by 3 or 5" do
+    it "returns a string containing the number when given a number not divisible by 3 or 5" do
       expect(Fizzbuzz.parse(1)).to eq("1")
     end
   end
