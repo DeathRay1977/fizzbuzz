@@ -1,16 +1,9 @@
 class Fizzbuzz
   def self.parse(num)
-    result = num.to_s
-    if num % 3 == 0
-      result = 'Fizz'
-    end
-    if num % 5 == 0
-      result = 'Buzz'
-    end
-    if num % 15 == 0
-      result = 'FizzBuzz'
-    end
-    result
+    return 'FizzBuzz' if num % 15 == 0
+    return 'Fizz' if num % 3 == 0
+    return 'Buzz' if num % 5 == 0
+    num.to_s
   end
 
   def self.range(start, finish)
